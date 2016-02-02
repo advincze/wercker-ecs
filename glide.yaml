@@ -1,0 +1,5 @@
+package: main
+import:
+  - package: github.com/aws/aws-sdk-go
+  - package: github.com/jmespath/go-jmespath
+  - package: github.com/go-ini/ini
