@@ -1,10 +1,10 @@
 box: wercker/golang
 build:
-	steps:
-	- script:
-		name: enable vendor experiment
-		code: export GO15VENDOREXPERIMENT=1
-	# Statically build the project
-	- script:
-		name: go build
-		code: CGO_ENABLED=0 go build -a --installsuffix cgo --ldflags="-s" -o ecs .
+  steps:
+  - script:
+    name: enable vendor experiment
+    code: export GO15VENDOREXPERIMENT=1
+    # Statically build the project
+  - script:
+    name: go build
+    code: CGO_ENABLED=0 go build -a --installsuffix cgo --ldflags="-s" -o ecs .
