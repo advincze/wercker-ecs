@@ -11,9 +11,9 @@ build:
         name: go version
         code: go version
     - script:
-        name: pwd
-        code: pwd
+        name: copy to gopath
+        code: cp -r ./ $GOPATH/src/github.com/advincze/wercker-ecs
     - script:
         name: go build
-        code: GO15VENDOREXPERIMENT=1 CGO_ENABLED=0 go build -a --installsuffix cgo --ldflags="-s" -o ecs .
+        code: GO15VENDOREXPERIMENT=1 CGO_ENABLED=0 go build -a --installsuffix cgo --ldflags="-s" -o ecs github.com/advincze/wercker-ecs
       
