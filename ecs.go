@@ -7,10 +7,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-sdk-go/service/ecs"
+	"github.com/advincze/wercker-ecs/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws"
+	"github.com/advincze/wercker-ecs/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws/credentials"
+	"github.com/advincze/wercker-ecs/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws/session"
+	"github.com/advincze/wercker-ecs/Godeps/_workspace/src/github.com/aws/aws-sdk-go/service/ecs"
 )
 
 var (
