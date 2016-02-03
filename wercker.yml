@@ -11,6 +11,9 @@ build:
         name: go version
         code: go version
     - script:
+        name: pwd
+        code: pwd
+    - script:
         name: go build
         code: GO15VENDOREXPERIMENT=1 CGO_ENABLED=0 go build -a --installsuffix cgo --ldflags="-s" -o ecs .
       
